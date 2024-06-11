@@ -18,6 +18,7 @@ destroyButton.addEventListener("click", () => {
 });
 
 function createBoxes(amount) {
+  const fragment = document.createDocumentFragment();
   for (let i = 0; i < amount; i++) {
     const box = document.createElement("div");
     box.style.width = `${30 + i * 10}px`;
