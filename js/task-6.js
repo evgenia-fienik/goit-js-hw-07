@@ -26,13 +26,12 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     fragment.appendChild(box);
   }
+
   boxContainer.appendChild(fragment);
 }
 
 function destroyBoxes() {
-  while (boxContainer.firstChild) {
-    boxContainer.removeChild(boxContainer.firstChild);
-  }
+  boxContainer.innerHTML = "";
 }
 
 function getRandomHexColor() {
